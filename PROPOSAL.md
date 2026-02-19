@@ -338,35 +338,4 @@ Legacy Sources → S3 Landing → Glue ETL → Staging Tables
 
 ---
 
-## Frequently Asked Questions
 
-**Q: Can we see your code quality before committing?**  
-A: Yes. We've prepared a demo repository showing our ingestion engine, deduplication logic, and dashboard UI. GitHub link: [Will be provided]
-
-**Q: What if the data is messier than expected?**  
-A: Phase 1 includes data profiling. If significant issues found, we'll adjust Phase 2 scope with your approval before proceeding.
-
-**Q: Can we add features later?**  
-A: Absolutely. The architecture supports extensibility. Additional features quoted separately after Phase 5.
-
-**Q: What about AWS costs?**  
-A: Estimated $800-$1,200/month. We'll provide detailed cost breakdown and optimization recommendations.
-
-**Q: Do you offshore any work?**  
-A: No. Our 3-person team is US-based (Texas and California). All work done in-house.
-
----
-
-## Contact
-
-Ready to consolidate your 84M records into a unified, high-performance system?
-
-**Let's schedule a discovery call.**
-
-Best regards,  
-[Your Name]  
-[Your Upwork Profile]
-
----
-
-**P.S.** We've built a working demo of the ingestion engine and deduplication algorithm. Happy to walk through it during our discovery call to demonstrate our technical approach.
