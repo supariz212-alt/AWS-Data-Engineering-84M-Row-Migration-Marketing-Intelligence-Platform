@@ -1,38 +1,44 @@
-# 84M Record Migration - AWS Data Engineering Solution
+# 84M Record Migration – AWS Data Engineering Platform
 
-Production-grade data pipeline for consolidating 84 million records with automated deduplication and sub-1.5s query performance.
+Production-grade AWS data architecture for consolidating 84+ million records into a unified Source of Truth with automated ingestion, deduplication, compliance, and sub-1.5s query performance.
 
-## What This Demonstrates
+---
 
-- **Ingestion Engine:** Atomic upsert logic with validation checklists
-- **Deduplication:** Golden record algorithm with fuzzy matching
-- **Performance:** Query optimization strategies for <1.5s response
-- **Architecture:** Complete AWS infrastructure design
+## What This Repository Demonstrates
+
+This repository outlines a reference architecture and execution framework for large-scale data consolidation projects involving:
+
+- 68M+ legacy database records (MySQL / SQLite)
+- 15M+ historical CSV campaign records
+- Continuous ingestion requirements
+- Golden Record deduplication logic
+- Compliance filtering (DNC / Opt-Out)
+- High-performance operational dashboard
+
+---
+
+## Core Capabilities
+
+✓ Zero data loss migration strategy  
+✓ Atomic upsert ingestion engine (idempotent loads)  
+✓ Versioned import tracking & reconciliation  
+✓ Fuzzy matching Golden Record algorithm  
+✓ Full audit trail and change history  
+✓ Sub-1.5s query performance architecture  
+✓ Private VPC AWS infrastructure design  
+
+---
 
 ## Technical Stack
 
 - AWS Aurora MySQL (RDS)
 - AWS Glue (ETL orchestration)
-- Python/PySpark (data processing)
+- Python / PySpark
 - ElastiCache Redis (query acceleration)
-- React/Next.js (Operations Dashboard)
+- FastAPI (backend services)
+- React / Next.js (Operations Dashboard)
+
+---
 
 ## Repository Structure
-```
-/sql/           - Database schema and indexes
-/ingest/        - Ingestion engine Python scripts
-/dedupe/        - Deduplication algorithm
-/api/           - FastAPI backend endpoints
-/docs/          - Architecture diagrams and runbooks
-```
 
-## Key Features
-
-✓ Zero data loss migration  
-✓ Atomic upsert with conflict resolution  
-✓ Fuzzy matching deduplication  
-✓ DNC compliance scrubbing  
-✓ Sub-1.5s query performance  
-✓ Complete audit trail  
-
-Built for Community Minerals - 84M Record Migration Project
