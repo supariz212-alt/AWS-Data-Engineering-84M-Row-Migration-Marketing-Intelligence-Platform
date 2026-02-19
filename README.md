@@ -42,3 +42,32 @@ This repository outlines a reference architecture and execution framework for la
 
 ## Repository Structure
 
+/sql/ - Database schema, indexes, partitions
+/ingest/ - Atomic ingestion engine
+/dedupe/ - Golden record logic
+/api/ - Dashboard & integration endpoints
+/docs/ - Architecture diagrams & runbooks
+
+---
+
+## Performance Strategy
+
+- Table partitioning by HASH(person_id)
+- Composite indexes: (email), (phone_e164), (last_name, zip)
+- Aurora read replicas for dashboard traffic
+- Redis caching for filtered list queries
+- Query profiling via Performance Insights
+
+---
+
+## Migration Integrity Controls
+
+- Pre/post row count validation
+- SHA256 checksum comparison
+- Sampling-based verification
+- Batch-level validation reports
+- Automated reconciliation logs
+
+---
+
+This architecture is designed for enterprise-scale data unification projects requiring performance, compliance, and auditability.
