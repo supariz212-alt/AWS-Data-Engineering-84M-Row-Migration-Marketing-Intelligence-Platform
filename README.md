@@ -20,7 +20,7 @@ This repository outlines a reference architecture and execution framework for la
 ## Core Capabilities
 
 ✓ Zero data loss migration strategy  
-✓ Atomic upsert ingestion engine (idempotent loads)  
+✓ Atomic upsert ingestion engine with idempotent batch processing and conflict resolution 
 ✓ Versioned import tracking & reconciliation  
 ✓ Fuzzy matching Golden Record algorithm  
 ✓ Full audit trail and change history  
@@ -57,6 +57,7 @@ This repository outlines a reference architecture and execution framework for la
 - Aurora read replicas for dashboard traffic
 - Redis caching for filtered list queries
 - Query profiling via Performance Insights
+- CloudWatch + slow query monitoring for performance regression detection
 
 ---
 
